@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApiClass.Models;
 
 namespace WebApiClass.Controllers;
 
@@ -21,6 +22,13 @@ public class HomeController : ControllerBase
     public int GetReturnInt()
     {
         return 100;
+    }
+
+    [HttpPost]
+    public int Post( TestDto input)
+    {
+        return 200;
+
     }
 
 }
